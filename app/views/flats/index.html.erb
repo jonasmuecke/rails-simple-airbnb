@@ -1,0 +1,25 @@
+  <nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1">Simple Airbnb</span>
+  </nav>
+  <h1>All our Flats(<%=Flat.count%>)</h1>
+  <div class="cards">
+  <% @flats.each do |flat| %>
+    <div class="card">
+      <h2><%=flat.name%></h2>
+      <h3><%=flat.address%></h3>
+      <div class="icons">
+      <div class="persons">
+      <i class="fas fa-user-friends"></i>
+      <p><%=flat.number_of_guests%></p>
+      </div>
+      <div class="price">
+      <i class="fas fa-euro-sign"></i>
+      <p><%=flat.price_per_night%></p>
+      </div>
+      </div>
+      <div class="details">
+      <p>link to details</p>
+      </div>
+    </div>
+  <% end %>
+</div>

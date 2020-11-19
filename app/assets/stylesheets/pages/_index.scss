@@ -1,0 +1,35 @@
+// Import page-specific CSS files here.
+@import "home";
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: rgb(177, 177, 177);
+    border: solid;
+    border-color: white;
+    border-width: 10px;
+    flex: 0 1 33%;
+    align-items: center;
+  }
+
+.persons {
+  display: flex;
+  margin-right: 30px;
+}
+
+.price {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  margin-right: px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
